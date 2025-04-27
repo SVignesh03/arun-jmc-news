@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARUN JMC NEWS - Stay Informed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="light-theme">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-container">
+          <h1 class="site-logo">ARUN JMC NEWS</h1>
+        </div>
+        <nav class="main-nav">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active" data-category="all">All News</a></li>
+            <li><a href="#" class="nav-link" data-category="technology">Technology</a></li>
+            <li><a href="#" class="nav-link" data-category="business">Business</a></li>
+            <li><a href="#" class="nav-link" data-category="politics">Politics</a></li>
+            <li><a href="#" class="nav-link" data-category="entertainment">Entertainment</a></li>
+            <li><a href="#" class="nav-link" data-category="health">Health</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search-container">
+            <button class="search-toggle" aria-label="Toggle Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <div class="search-form-container">
+              <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search articles...">
+                <button type="submit" class="search-submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-submit-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-results container hidden">
+    <div class="results-header">
+      <h2>Search Results</h2>
+      <button class="close-search">×</button>
+    </div>
+    <div class="results-container">
+      <!-- Search results will be populated here -->
+    </div>
+  </div>
+
+  <main>
+    <section id="article-container">
+        <!-- Article content will be injected here dynamically -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>ARUN JMC NEWS</h2>
+          <p>Stay informed with the latest news across all categories.</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" data-category="technology">Technology</a></li>
+            <li><a href="#" data-category="business">Business</a></li>
+            <li><a href="#" data-category="politics">Politics</a></li>
+            <li><a href="#" data-category="entertainment">Entertainment</a></li>
+            <li><a href="#" data-category="health">Health</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>ARUN JMC NEWS delivers timely, unbiased news from around the world.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ARUN JMC NEWS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/utils/dom.js"></script>
+  <script src="js/utils/dates.js"></script>
+  <script src="js/data/articles.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/categories.js"></script>
+  <!-- <script src="js/modal.js"></script> -->
+  <script src="js/article.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

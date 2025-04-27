@@ -1,0 +1,112 @@
+/* Article Page Styles */
+
+#article-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: var(--background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    align-items: center;
+  }
+  
+  .article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .read-time svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .article-content {
+    margin-top: 2rem;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
+  
+  .article-summary {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+  
+  .article-body p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #article-container {
+      padding: 1.5rem;
+    }
+  
+    .article-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* ==================================
+     Theme Variables
+  ================================== */
+  
+  /* Light Theme (default) */
+  :root {
+    --background: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --text-body: #333333;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    --background: #1c1c1e;
+    --text-primary: #f1f1f1;
+    --text-secondary: #aaa;
+    --text-body: #ccc;
+  }
+  
